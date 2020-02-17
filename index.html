@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- タイプする単語を表示する領域をpタグでやっていく -->
+    <!-- Jsで扱いやすいようにIDタグにしている -->
+    <p id="target">word</p>
+    
+    <!-- Js読み込むために必須 -->
+    <script src="js/main.js"></script>
+    <!-- 次にスコアなどを入れていくpタグを作る -->
+    <!-- スタイルをつけたいのでinfoと言うスコアを入れる -->
+    <!-- 打った文字数やミスした文字数などはこちらに入る -->
+    <p class="info">
+        <!-- 数値の部分はJsで後ほど操作するのでspanタグで囲う -->
+        Letter count: <span id="score">0</span>,
+        <!-- 次はミスした部分を作成する -->
+        Miss count: <span id="miss">0</span>
+    </p>
+</body>
+</html>
